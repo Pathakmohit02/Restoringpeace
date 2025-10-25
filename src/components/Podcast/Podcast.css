@@ -1,0 +1,97 @@
+.podcast-container {
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #d1d8c7; /* Light green background from the image */
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .podcast-container {
+    flex-direction: column; /* Stack image and content vertically */
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .podcast-image {
+    justify-content: center; /* Center the image on smaller screens */
+    margin-bottom: 30px; /* Add space between image and content */
+  }
+
+  .podcast-image img {
+    max-width: 90%; /* Adjust image size for smaller screens */
+  }
+
+  .podcast-content {
+    padding: 0; /* Remove padding from content for full width */
+    max-width: 100%; /* Allow content to take full width */
+    align-items: center; /* Center text and button */
+    text-align: center; /* Center text */
+  }
+
+  .podcast-content h2 {
+    font-size: 36px; /* Adjust font size */
+  }
+
+  .podcast-content p {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+.podcast-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right within its flex container */
+  align-items: center;
+}
+
+.podcast-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcast-content {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px; /* Limit text width for readability */
+}
+
+.podcast-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for PODCAST */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.podcast-content .light-text {
+  color: #f5f5dc; /* Light beige color for OUR */
+  margin-right: 10px;
+}
+
+.podcast-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.spotify-btn {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spotify-btn:hover {
+  background-color: #333;
+  color: white;
+}

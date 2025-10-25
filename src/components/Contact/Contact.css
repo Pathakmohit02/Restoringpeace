@@ -1,0 +1,175 @@
+.contact-container {
+  width: 100%; /* Take full width of its parent (.page-content) */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #e0b0d3; /* Pinkish background from the image */
+  padding: 50px 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  font-size: 48px;
+  color: #fff; /* White color for the heading */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.contact-form-area {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px; /* Limit form width for readability */
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  color: #fff; /* White text color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Light white bottom border */
+  font-size: 16px;
+  outline: none;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter white placeholder */
+}
+
+.form-row select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2C197.387L146.203%2C56.591L5.406%2C197.387h281.594z%22%2F%3E%3C%2Fsvg%3E'); /* White arrow for select */
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px;
+  cursor: pointer;
+}
+
+.form-row .note-text {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.form-consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.form-consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.privacy-link {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.privacy-link a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.send-btn {
+  background-color: #c2007e; /* Pinkish-purple button */
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.send-btn:hover {
+  background-color: #a0006a; /* Darker pink-purple on hover */
+}
+
+/* Styles for the main-content and page-content to handle side-by-side layout */
+.main-content {
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.page-content {
+  flex: 1; /* Allows the page content to take up remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 15px;
+  }
+
+  .contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 15px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-row .note-text,
+  .form-consent,
+  .privacy-link {
+    font-size: 12px;
+  }
+
+  .send-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

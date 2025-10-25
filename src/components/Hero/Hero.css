@@ -1,0 +1,144 @@
+.hero-container {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left for desktop */
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #e6f7e9;
+  background-image: url("heroo.png"); /* Desktop background image */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  border-radius: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero-background-mobile {
+  display: none; /* Hidden by default on desktop */
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 0; /* Remove padding from container to fill with background image and white content area */
+    justify-content: center;
+    height: auto;
+    background-image: none; /* Remove background from container on mobile */
+  }
+
+  .hero-background-mobile {
+    display: block; /* Show new background container on mobile */
+    width: 100%;
+    height: 200px; /* Adjust height as needed for mobile background */
+    background-image: url("heroo.png"); /* Apply background image here for mobile */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    background-color: white; /* White background for text and buttons on mobile */
+    padding: 30px 15px; /* Add padding to the content container */
+    margin-right: 0;
+    margin-bottom: 0; /* Remove margin-bottom as background is separate */
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* The .hero-image div is no longer present in Hero.jsx, so no need to hide it here */
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 1000px;
+  /* margin-right: 80px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start;  */
+  text-align: center; /* Align text to the left for desktop */
+}
+
+.hero-reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #ffa500; /* Orange color for stars */
+}
+
+.hero-reviews .star {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.hero-reviews span:last-child {
+  color: #333; /* Darker color for text */
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.get-started-btn,
+.free-trial-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn {
+  background-color: #ff6347; /* Orange-red color from the image */
+  color: white;
+}
+
+.get-started-btn:hover {
+  background-color: #e0533a;
+}
+
+.free-trial-btn {
+  background-color: transparent;
+  color: #ff6347; /* Orange-red color from the image */
+  border: 1px solid #ff6347;
+}
+
+.free-trial-btn:hover {
+  background-color: #ffece9;
+}
+
+/* The .hero-image div is no longer present in Hero.jsx */
+

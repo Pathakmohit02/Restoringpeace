@@ -1,0 +1,120 @@
+.footer-container {
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #f8f5f0; /* Light beige background from the image */
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-content {
+    max-width: 100%; /* Allow content to take full width */
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .location,
+  .footer-content p,
+  .opening-hours h4,
+  .opening-hours li,
+  .services-heading,
+  .services-list li {
+    font-size: 12px; /* Reduce font sizes for readability */
+  }
+
+  .services-list ul {
+    flex-direction: column; /* Stack service lists vertically */
+    gap: 5px; /* Adjust gap */
+  }
+
+  .services-list li {
+    white-space: normal; /* Allow services to wrap */
+  }
+}
+
+.footer-content {
+  max-width: 900px; /* Limit content width */
+  margin-bottom: 30px;
+}
+
+.company-name {
+  color: #c2007e; /* Pinkish-purple color */
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location,
+.footer-content p {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-content a {
+  color: #c2007e;
+  text-decoration: none;
+}
+
+.opening-hours {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.opening-hours h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.opening-hours ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opening-hours li {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.services-list {
+  margin-bottom: 30px;
+}
+
+.services-heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.services-list li {
+  font-size: 11px;
+  white-space: nowrap; /* Prevent items from wrapping */
+}
+
+.footer-social-icons {
+  margin-top: 20px;
+}

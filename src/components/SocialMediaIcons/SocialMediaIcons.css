@@ -1,0 +1,47 @@
+.social-icons-container-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.social-icons-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .social-icons-container-horizontal {
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+
+  .social-icon img {
+    width: 20px; /* Adjust image size for smaller screens */
+    height: 20px;
+  }
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #555;
+  transition: transform 0.3s ease; /* Transition for hover effect */
+  display: flex; /* Ensures image is centered if smaller than container */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon img {
+  width: 24px; /* Default size for social media images */
+  height: 24px;
+  object-fit: contain; /* Ensures the entire image is visible */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+  color: #c2007e;
+}

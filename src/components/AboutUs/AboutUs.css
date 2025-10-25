@@ -1,0 +1,89 @@
+.about-us-container {
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f8f5f0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 800px; /* Limit text width for readability */
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+  text-align: justify; /* Justify text */
+}
+
+.text-content p {
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.italic-text {
+  font-style: italic;
+  text-align: center;
+  margin: 30px 0;
+  color: #c2007e; /* Pinkish-purple for italic text */
+}
+
+.about-us-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px 20px;
+  background-color: #f8f5f0; /* Match content background */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-btn {
+  padding: 12px 25px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px;
+  background-color: #fff; /* White background for buttons */
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #c2007e; /* Pinkish-purple on hover */
+  color: white;
+  border-color: #c2007e;
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    padding: 30px 15px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    text-align: left; /* Adjust text alignment for smaller screens */
+  }
+
+  .about-us-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+    padding: 20px 15px;
+  }
+
+  .about-btn {
+    width: 100%; /* Make buttons take full width */
+  }
+}
